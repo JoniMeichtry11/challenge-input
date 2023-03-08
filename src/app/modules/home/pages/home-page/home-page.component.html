@@ -1,1 +1,20 @@
-<p>home-page works!</p>
+
+<div class="d-flex flex-column align-items-center">
+
+  <h2 class="text-light">Shared component</h2>
+
+  <div class="m-4 d-flex justify-content-center">
+    <button class="btn btn-success" (click)="changeInput()">Change input</button>
+  </div>
+
+  <app-input-shared
+    type="number"
+    name="edad"
+  ></app-input-shared>
+
+  <app-input-shared
+    [type]="inputType"
+    [name]="inputType"
+  ></app-input-shared>
+
+</div>
