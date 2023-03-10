@@ -1,7 +1,7 @@
 
 <div class="d-flex flex-column align-items-center">
 
-  <h2 class="text-light">Shared component</h2>
+  <h2 class="text-light mt-2">Shared component</h2>
 
   <div class="m-4 d-flex justify-content-center">
     <button class="btn btn-success" (click)="changeInput()">Change input</button>
@@ -16,5 +16,17 @@
     [type]="inputType"
     [name]="inputType"
   ></app-input-shared>
+
+  <h2 class="text-light mt-2">Inherited component</h2>
+
+  <app-input-advanced
+    customType="date"
+    class="m-3"
+  ></app-input-advanced>
+
+  <app-input-checkbox
+    type="checkbox"
+    [checked]=false
+  ></app-input-checkbox>
 
 </div>

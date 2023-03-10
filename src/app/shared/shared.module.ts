@@ -1,16 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { InputSharedComponent } from './components/input-shared/input-shared.component';
+import { InputInheritedComponent } from './components/input-inherited/input-inherited.component';
 
 @NgModule({
   declarations: [
-    InputSharedComponent
+    InputSharedComponent,
+    InputInheritedComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
-    InputSharedComponent
+    InputSharedComponent,
+    InputInheritedComponent
   ]
 })
 export class SharedModule { }
